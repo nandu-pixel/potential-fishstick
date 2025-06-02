@@ -24,7 +24,58 @@ Given `n` modules and a list of dependency relationships between them, determine
 
 A cycle in the dependency graph would mean circular loading dependencies, which must be avoided.
 
-## 🧾 Function Signature
 
-```python
-def hasCircularDependency(n: int, edges: List[List[int]]) -> bool
+
+# 🎆 GPU-Accelerated Particle System (Python + OpenGL)
+
+This project is a GPU-accelerated particle system implemented in Python using **PyOpenGL** and **GLFW**. It simulates a fireworks display or magical energy burst with real-time performance, using shaders and GPU buffers for efficient rendering.
+
+## 🚀 Features
+
+✅ **Particle System Basics**
+- Particles spawn from a central point or burst area
+- Each particle has:
+  - Position
+  - Velocity
+  - Color (changes over time)
+  - Lifetime (fades out)
+
+✅ **Shader Usage**
+- Uses vertex and fragment shaders (GLSL)
+- Additive blending for glowing effects
+- GPU-based rendering using point sprites
+
+✅ **Animation**
+- Particles move with velocity and optional gravity
+- Smooth color and opacity transitions
+
+✅ **Interactivity**
+- Click to trigger a new particle burst at mouse position
+- Easily customizable controls (e.g., for particle count, gravity)
+
+✅ **Performance**
+- Efficiently handles 1000+ particles
+- Uses Vertex Buffer Objects (VBOs) for GPU acceleration
+
+---
+
+## 🧪 Demo Preview
+
+> **Run the app** and click to trigger bursts of colorful particles.
+> Handles hundreds of dynamic particles in real-time.
+
+---
+
+## 📦 Installation
+
+### 🐍 Requirements
+
+- Python 3.8+
+- `PyOpenGL`
+- `glfw`
+- `numpy`
+
+Install dependencies:
+
+```bash
+pip install PyOpenGL glfw numpy
