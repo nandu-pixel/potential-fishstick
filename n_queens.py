@@ -26,3 +26,11 @@ def solveNQueens(n):
     grid = [['.' for _ in range(n)] for _ in range(n)]
     place_queen(0)
     return solutions
+if __name__ == "__main__":
+    n = int(input())
+    result = solveNQueens(n)
+    for board in result:
+        for row in board:
+            print(row)
+        print()
+
